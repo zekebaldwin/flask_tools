@@ -1,0 +1,10 @@
+{% extends "homepage.html" %} {% block content %}
+<h1>{{ question.question }}</h1>
+<form class="form" action="/answer" id="form">
+    <input type="radio" value="yes">
+    <label for="yes">yes</label>
+    <input type="radio" value="no">
+    <label for="no">no</label>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
